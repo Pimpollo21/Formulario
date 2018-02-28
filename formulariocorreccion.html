@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+	<title>¿Cuánto sabes de Nintendo? ¡Compruébalo con nuestro formulario!</title>
+	
+	<meta name="author"      content="José Francisco Pimpollo">
+	<meta name="description" content="Formulario web con preguntas relacionadas con Nintendo, una de las
+	                                  grandes compañías de videojuegos.">
+	<meta name="keywords"    content="Formulario Nintendo, test"> 
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	
+	<div>
+		<h1>¿Cuánto sabes de Nintendo?</h1>
+	</div> 
+	
+	<div id="parrafo1">La respuesta a la pregunta "<span id='textopregunta1'></span>" és:
+		<p id="respuesta1"></p>
+	</div>
+	
+	<div id="parrafo2">La respuesta a la pregunta "<span id='textopregunta2'></span>" és:
+		<p id="respuesta2"></p>
+	</div>
+
+	<div id="parrafo3">La respuesta a la pregunta "<span id='textopregunta3'></span>" és:
+		<p id="respuesta3"></p>
+	</div>
+	
+	<div id="parrafo4">La respuesta a la pregunta "<span id='textopregunta4'></span>" és:
+		<p id="respuesta4"></p>
+	</div>
+	
+	<div id="parrafo5">La respuesta a la pregunta "<span id='textopregunta5'></span>" és:
+		<p id="respuesta5"></p>
+	</div>
+	
+	<div id="parrafo6">La respuesta a la pregunta "<span id='textopregunta6'></span>" és:
+		<p id="respuesta6"></p>
+	</div>
+	
+	<div id="parrafo7">La respuesta a la pregunta "<span id='textopregunta7'></span>" és:
+		<p id="respuesta7"></p>
+	</div>
+	
+	<div id="parrafo8">La respuesta a la pregunta "<span id='textopregunta8'></span>" és:
+		<p id="respuesta8"></p>
+	</div>
+	
+	<div id="parrafo9">La respuestas a la preguntas "<span id='textopregunta9'></span>" son, en el mismo orden:
+		<p id="respuesta9"></p>
+	</div>
+	
+	<div id="parrafo10">La respuesta a la pregunta "<span id='textopregunta10'></span>" és:
+		<p id="respuesta10"></p>
+	</div>
+	
+	<script>
+		var textXML = '<questions><question type="radio"><texto>Quin és el color del cel?</texto>'+
+					  '<answer>blau</answer></question></questions>';
+	
+		parser = new DOMParser();
+		xmlDoc = parser.parseFromString(textXML ,"text/xml");
+				document.getElementById("textopregunta1").innerHTML   = "¿De qué color es la marca Nintendo?";
+				document.getElementById("respuesta1").innerHTML       = "Rojo";
+				
+				document.getElementById("textopregunta2").innerHTML   = "¿Donkey Kong qué clase de animal es?";
+				document.getElementById("respuesta2").innerHTML       = "Un primate";
+				
+				document.getElementById("textopregunta3").innerHTML   = "¿Qué lleva Mario el fontanero en la cabeza?";
+				document.getElementById("respuesta3").innerHTML       = "Una gorra";
+				
+				document.getElementById("textopregunta4").innerHTML   = "¿De qué color es el famoso y veloz erizo que vino de SEGA?";
+				document.getElementById("respuesta4").innerHTML       = "Azul";
+				
+				document.getElementById("textopregunta5").innerHTML   = "¿De qué franquicia de videojuegos es Pikachu?";
+				document.getElementById("respuesta5").innerHTML       = "Pokémon";
+				
+				document.getElementById("textopregunta6").innerHTML   = "El famoso capitán de naves de F-ZERO es...";
+				document.getElementById("respuesta6").innerHTML       = "Falcon";
+				
+				document.getElementById("textopregunta7").innerHTML   = "¿Qué personaje viste ropas verdes y porta hada blanca?";
+				document.getElementById("respuesta7").innerHTML       = "Link";
+				
+				document.getElementById("textopregunta8").innerHTML   = "¿Como se llama el malvado que siempre acecha Hyrule?";
+				document.getElementById("respuesta8").innerHTML       = "Ganondorf";
+				
+				document.getElementById("textopregunta9").innerHTML   = "¿Cómo se llama la saga de karts más famosa de Nintendo?, "+
+																		"Saga de juegos de coches de SEGA:,"+
+																		"Juego de carreras de Sonic con tablas voladoras:";
+				document.getElementById("respuesta9").innerHTML       = "Mario kart, "+"SEGA Racing, "+"Sonic Riders";
+				
+				document.getElementById("textopregunta10").innerHTML  = "¿Cuál fue la primera consola de Nintendo en sacar juegos en 3D?";
+				document.getElementById("respuesta10").innerHTML      = "N64";
+	
+	</script>
+
+</body>
+
+</html>
