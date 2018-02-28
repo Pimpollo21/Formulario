@@ -42,4 +42,6 @@ Por último, he creado el presente fichero README en el repositorio con los deta
 
 ## Dirección URL.
 El enlace de RawGit a mi web es: https://rawgit.com/Pimpollo21/Formulario/master/index.html
-El enlace de RawGit del código minificado es: https://rawgit.com/Pimpollo21/Master-Formulario/master/index.html
+El enlace de RawGit del código minificado es: https://rawgit.com/Pimpollo21/Formulario/Master-Formulario/index.html
+
+Nota: con los archivos descargados el botón de comprobar funciona correctamente.
